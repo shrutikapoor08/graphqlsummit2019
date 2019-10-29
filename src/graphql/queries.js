@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
-export const singleArtist = gql`
-  query songs($artist: String) {
+export const GET_SONGS = gql`
+  query albums($artist: String) {
     songs(where: { artist: $artist }) {
       name
       id

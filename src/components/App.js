@@ -1,5 +1,5 @@
 import React, { useContext, useReducer } from "react";
-import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Context from '../context';
 import reducer from '../reducer'
 
@@ -11,9 +11,7 @@ const App = () => {
     return (
           <Router>
               <Context.Provider value={{state,dispatch}}>
-              <Switch>
-                  <Route exact path="/" component={Home} />
-              </Switch>
+                <Home />
               </Context.Provider>
           </Router>
     );
