@@ -9,7 +9,6 @@ const AddSong = () => {
   const [lyrics, setLyrics] = useState("");
   const { dispatch } = useContext(Context);
   const [addSong] = useMutation(ADD_SONG);
-  //   const test  = useStreamingLyrics("test");
 
   return (
     <form
